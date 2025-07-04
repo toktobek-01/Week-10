@@ -35,7 +35,7 @@ public class NumbersArray {
         // Sort numbers (ascending)
         for (int i = 0; i < count; i++) {
             for (int j = i + 1; j < count; j++) {
-                if (numbers[i] > numbers[j]) {
+                if (numbers[i] < numbers[j]) {  // compare for descending
                     int temp = numbers[i];
                     numbers[i] = numbers[j];
                     numbers[j] = temp;
@@ -51,7 +51,7 @@ public class NumbersArray {
             System.out.println(num);
         }
 
-        System.out.println("Sorted numbers in ascending order:");
+        System.out.println("Sorted numbers in descending order:");
         for (int num : numbers) {
             System.out.println(num);
         }

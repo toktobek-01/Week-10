@@ -17,10 +17,15 @@ public class NumbersArray {
         }
 
         double average = (double) sum/count;
+        System.out.println("You entered these numbers:");
+        for (int i = 0; i < count; i++) {
+            System.out.println(numbers[i]);
+        }
 
         System.out.println("Total sum: " + sum);
         System.out.println("Average: " + average);
 
         sc.close();
     }
+
 }
